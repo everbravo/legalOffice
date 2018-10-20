@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <link type="text/css" rel="stylesheet" href="/project/faces/javax.faces.resource/theme.css?ln=primefaces-start" />
+    </h:head>
+    <h:body style="margin-top: 12%">
+        <h:form>
+            <p:focus context="panelLogin"/>
+            <center>
+                <p:outputLabel value="Consultorio Juridico - Unisinu"/>
+                <h:panelGrid columns="1" id="panelLogin">
+                    <br />
+
+                    <h:panelGrid columns="3" id="panel2">
+
+                        <p:outputLabel value="Usuario:" for="txtUsuario"/>
+                        <p:inputText id="txtUsuario" value="#{loginBeam.logueo.users}" required="true" label="Usuario">
+                            <p:effect type="bounce" event="click"/>
+                            <f:validateLength minimum="4"/>
+                            <p:keyFilter regEx="/[abcdefghijklmnñopqrstuvwxyz1234567890]/i" />
+                        </p:inputText>
+                        <p:message for="txtUsuario"/>
+
+                        <p:outputLabel value="Contraseña:" for="txtContraseña"/>
+                        <p:inputText id="txtContraseña" type="password" value="#{loginBeam.logueo.password}" required="true" label="Contraseña">
+                            <p:effect type="bounce" event="click"/>
+                        </p:inputText>
+                        <p:message for="txtContraseña"/>
+
+                        <h:column/>
+                        <p:commandButton id="btnLogin" value="Iniciar Sesión..." update="panel2" icon="ui-icon-key" actionListener="#{loginBeam.logueo}"/>
+
+                        <h:column/>
+                        <h:column/>
+                        <p:commandButton id="btnRegistro" value="Registrarme..." update="panel2" icon="ui-grid-col" actionListener="#{loginBeam.logueo}"/>
+
+                    </h:panelGrid>
+                    <p:separator/>
+                    <p:blockUI trigger="btnLogin" block="panelLogin">
+                        Cargando...
+                        <p:graphicImage/>
+                    </p:blockUI>
+                    <p:blockUI trigger="btnRegistro" block="panelLogin">
+                        Cargando...
+                        <p:graphicImage/>
+                    </p:blockUI>
+                </h:panelGrid>
+            </center>
+        </h:form>
+    </h:body>
+</html>
+
+
