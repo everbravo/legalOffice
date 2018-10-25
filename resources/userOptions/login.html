@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/login.css" />
+    <script src="../../js/validarLogin.js"></script>
+</head>
+<body>
+    <form action="../../index.html" method="POST" onsubmit="return validar();">
+    <center>
+    <div class="contenedor">
+    <!--formulario login-->
+    <section id="login" class="text-center login bold">
+        <table class="table">
+            <tr>
+                <td colspan="2" class="center">
+                    <i class="fas fa-users fa-7x"></i>
+                </td>
+            </tr>
+            <tr>
+                <td class="bold">Usuario: </td>
+                <td>
+                    <input type="text" name="usuario" id="usuario" class="bold">
+                </td>
+            </tr>
+            <tr>
+                <td class="bold">Contraseña: </td>
+                <td>
+                    <input type="password" name="contraseña" id="contraseña" class="bold">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Volver" class="input-style bold button">
+                </td>
+                <td>
+                    <input type="submit" value="Acceder" class="input-style bold button">
+                </td>
+            </tr>
+        </table>
+    </section>
+</div>
+</center>
+</form>
+</body>
+</html>

@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;   
+}
+
+body{
+    font-family: 'Slabo 27px', serif;
+    background:  #ecf0f1;
+}
+
+p {
+    color: #524c56;
+    font-size: 160%;
+    line-height: 155%;
+    padding: 3%;
+    text-indent: 2%;
+    text-align: justify;
+
+}
+h3 {
+    font-size: 175%;
+    line-height: 155%;
+    font-weight: 500;
+    color: #524c56;
+    text-align: center;
+    text-transform: uppercase;
+    padding: o;
+
+}
+
+
+.text-center{
+        text-align: center;
+        margin: auto;
+        padding: 0;
+}
+
+.abautUs{
+    padding: 2rem;
+    margin: auto;
+}
+
+.container{
+    max-width: 960px;
+    margin: auto;
+    overflow:hidden;
+    padding: 4rem 1rem;
+
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.container .imgAU{
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.camposBasicos{
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-family: Courier;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #F5B535;
+}
+.camposNoBasicos{
+    margin: 5px auto; 
+    height: 332px; 
+    width: 1000px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Courier;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #F5B535;
+}
+
+.boton{
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0.2rem;
+    font-size: 1.3rem;
+    color: rgb(247, 245, 242);
+    background: #F5B535;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 1px solid #F5B535;
+}
+.boton:hover{
+    color: #333;
+    background-color: #ffffff;
+  }
+a {
+    color: #524c56;
+    text-decoration: none;
+    font: bold;
+
+}
+
+a:hover {
+    color: #c3d7df;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: -4px;
+
+}
+
+#wrapper{
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
+#banner-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: 0;
+}
+
+header #logo img{
+    margin: 20px;
+    float: left;
+    width: 50px;
+    padding: 0;
+}
+
+nav {
+    float: right;
+    padding:  15px 15px 0 0;
+}
+
+#menu-icon{
+    display: none;
+    font-size: 50px;
+}
+
+ul {
+    list-style: none;
+
+}
+
+nav ul li {
+    font-size: 150%;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+
+nav ul li a {
+    color: #6991ac;
+}
+
+.bg-lite{
+    background: #333;
+    color: #fff;
+}
+footer {
+    background: #2c3e50;
+    width: 100%;
+    overflow: auto;
+}
+
+.footer-nav{
+    text-align: right;
+}
+
+.footer-nav a{
+    font-size: 160%;
+    color: #c3d7df;
+    font-weight: 300;
+}
+
+.footer-nav a:hover{
+   color: #f5f5f5; 
+}
+
+.social{
+    text-align: center;
+}
+
+.social li{
+    display: inline;
+}
+
+.social i{
+    font-size: 420%;
+    margin: 1%;
+    padding: 1%;
+    color: #c3d7df;
+}
+
+.footer-second{
+    border-top: 1px solid #aadcd2;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-second p, .footer-second a {
+    text-align: center;
+    color: #fff;
+    font: 160%;
+    line-height: 155%;
+}
+
+.icon-text{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.icon-text-icon{
+    float: left;
+    width: 20%;
+    padding: 4%;
+}
+.icon-text-text{
+    float: left;
+    width: 60%;
+    padding: 4% 4% 2% 0;
+}
+
+.current {
+    color: #3f5767;
+}
+
+.one-third {
+    width: 31.5%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+  }
+
+.icon-wrap{
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    background-color: #6691ac;
+    border-radius: 125px;
+    text-align: center;
+    margin-top: 3%;
+}
+.icon-wrap i{
+    text-align: center;
+    color: #fff;
+    font-size: 450%;
+    padding: 20%;
+}
+.left-cold{
+    float: left;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    padding: 1%;
+}
+.sidebar {
+    float: right;
+    margin: 0 auto;
+    width: 32%;
+    height: auto;
+    padding: 1%;
+}
+
+.one-third-padding {
+    width: 29%;
+    float: left;
+    margin: 2% 2%;
+}
+.one-third-padding img{
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.clearfix-padding{
+    clear: both;
+    padding: 2%;
+}
+
